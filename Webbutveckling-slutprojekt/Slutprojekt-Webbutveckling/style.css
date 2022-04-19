@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.item {
+    background-color: darkgrey;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+
+}
+.item:hover {
+    background-color: rgb(196, 181, 181);
+}
+.item:link {
+    background-color: darkgrey;
+    display: block;
+}
+ul {
+    list-style-type: none;
+    padding: 0%;
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
