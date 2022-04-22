@@ -23,7 +23,7 @@ ul {
     list-style-type: none;
     padding: 0%;
 }
-a{
+.globalmeny{
     color: rgb(0, 0, 0);
     text-decoration: none;
     display: block;
@@ -50,5 +50,6 @@ body {
     background-color: rgb(196, 196, 196);
 }
 .formulär {
-
+    height: 150px;
+    width: 150px;
 }
