@@ -1,19 +1,22 @@
+.Logo {
+    margin-left: 0%;
+}
 .container {
     display: grid;
     grid-template-columns: auto auto auto;
 }
-.item {
-    background-color: darkgrey;
+.item{
+    background-color: dimgrey;
     padding: 0;
     text-align: center;
     font-size: 30px;
 
 }
 .item:hover {
-    background-color: rgb(196, 181, 181);
+    background-color: rgb(158, 158, 158);
 }
 .item:link {
-    background-color: darkgrey;
+    background-color: rgb(141, 141, 141);
     display: block;
 }
 ul {
@@ -29,4 +32,23 @@ a{
 
 h2 {
     text-align: center;
+    margin-top: 100px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    background-color: rgb(170, 170, 170);
+    text-align: center;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 20px
+}
+body {
+    background-color: rgb(196, 196, 196);
+}
+.formulär {
+
 }
