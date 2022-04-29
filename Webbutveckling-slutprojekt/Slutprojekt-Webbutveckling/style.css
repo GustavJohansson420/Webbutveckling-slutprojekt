@@ -1,14 +1,10 @@
-
-:root{
-    background-color: rgb(196, 196, 196);
-}
-
 h1 {
     margin-left: 10px;
 }
 
 body {
     margin: 0;
+    background-color: rgb(196, 196, 196);
 }
 
 .Logo {
@@ -18,7 +14,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .item{
@@ -26,7 +22,6 @@ body {
     padding: 0;
     text-align: center;
     font-size: 30px;
-
 }
 
 .item:hover {
