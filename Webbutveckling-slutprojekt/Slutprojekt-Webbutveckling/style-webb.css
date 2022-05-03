@@ -81,7 +81,17 @@ main div h2 {
 
 main div img {
     display: block;
-    max-height: 30%;
+    max-height: 40%;
+    max-width: 40%;
     margin-right: auto;
     margin-left: auto;
+}
+
+main p {
+    background-color: rgb(158, 149, 136);
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+    margin-bottom: 100%;
 }
