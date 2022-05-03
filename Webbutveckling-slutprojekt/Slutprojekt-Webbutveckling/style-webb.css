@@ -74,3 +74,14 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
 }
+
+main div h2 {
+    text-align: center;
+}
+
+main div img {
+    display: block;
+    max-height: 30%;
+    margin-right: auto;
+    margin-left: auto;
+}
