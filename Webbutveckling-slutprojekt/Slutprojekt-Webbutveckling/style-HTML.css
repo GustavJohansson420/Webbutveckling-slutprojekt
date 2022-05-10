@@ -74,17 +74,13 @@ main li a{
     background-color: rgb(181,166,66);
 }
 
-main li a:hover {
+main li a:hover{
     background-color: rgb(181,166,66);
 
 }
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-}
-
-main div h2 {
-    text-align: center;
 }
 
 main img {
@@ -107,8 +103,21 @@ main p {
 }
 
 table {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    border-collapse: collapse;
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+th, td {
+    text-align: left;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 300px;
 }
 
 td:first-child::before {
