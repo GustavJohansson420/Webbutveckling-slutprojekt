@@ -69,7 +69,8 @@ main li a{
     font-size: 22px;
     padding: 30px;
 }
-main li:first-of-type{
+
+.itemlocal{
     background-color: rgb(181,166,66);
 }
 
@@ -86,12 +87,13 @@ main div h2 {
     text-align: center;
 }
 
-main div img {
+main img {
     display: block;
     max-height: 220px;
     max-width: 220px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px; 
 }
 
 main p {
@@ -104,14 +106,17 @@ main p {
     padding: 20px;
 }
 
-iframe {
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-    height: 480px;
+table {
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+td:first-child::before {
+    content: "<";
+}
+
+td:first-child::after {
+    content: ">";
 }
 
 footer {
