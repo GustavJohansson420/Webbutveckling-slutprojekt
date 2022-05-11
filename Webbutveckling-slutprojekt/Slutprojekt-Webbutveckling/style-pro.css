@@ -1,0 +1,129 @@
+h1 {
+    margin-left: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(196, 196, 196);
+}
+
+.Logo {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item{
+    background-color: dimgrey;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.item2{
+    background-color: rgb(158, 158, 158);
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.item:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+.item:link {
+    background-color: rgb(141, 141, 141);
+    display: block;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0%;
+}
+
+.globalmeny{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+main nav {
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+main nav ul{
+    list-style-type: none;
+    width: 300px;
+    background-color: black;
+    margin-top: 3%;
+    padding: 0;
+}
+
+main li a{
+    display: block;
+    color: rgb(0, 255, 21);
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    padding: 30px;
+}
+
+.itemlocal{
+    background-color: rgb(60, 82, 55);
+}
+
+main li a:hover{
+    background-color: rgb(60, 82, 55);
+
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+main div {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+main div h2 {
+    text-align: center;
+}
+
+main div img {
+    display: block;
+    max-height: 260px;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+}
+
+main img {
+    display: block;
+    max-height: 450px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+main p {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    background-color: black;
+    color: rgb(0, 255, 21);
+    margin-left: 10%;
+    margin-right: 10%;
+}
