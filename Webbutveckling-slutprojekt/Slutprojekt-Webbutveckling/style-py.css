@@ -113,8 +113,8 @@ main div h2 {
 
 main div img {
     display: block;
-    max-height: 260px;
-    max-width: 260px;
+    max-height: 200px;
+    max-width: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px; 
@@ -152,28 +152,4 @@ main section {
     margin-right: 10%;
     margin-top: 100px;
     padding: 15px;
-}
-
-main section > h2 {
-    text-align: center;
-}
-
-footer {
-    background-color: #414141;
-    padding: 10px ;
-    margin-top: 100px;
-}
-
-footer div{
-    width: 335px;
-    margin-left: auto;
-    margin-right: auto;
-}
-footer img{
-    height: 80px; 
-}
-
-footer h3, footer p{
-    text-align: center;
-    color: white;
 }
