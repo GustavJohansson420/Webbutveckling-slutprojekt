@@ -1,5 +1,6 @@
 h1 {
     margin-left: 10px;
+    font-size: 5ex;
 }
 
 body {
@@ -24,25 +25,25 @@ body {
     font-size: 2em;
 }
 
-.item:link {
+header nav a:link {
     background-color: rgb(141, 141, 141);
     display: block;
 }
 
-.item:visited {
+header nav a:visited {
     background-color: rgb(141, 141, 141);
     display: block;
 }
 
-.item:focus {
+header nav a:focus {
     background-color: rgb(158, 158, 158);
 }
 
-.item:hover {
+header nav a:hover {
     background-color: rgb(158, 158, 158);
 }
 
-.item:active {
+header nav a:active {
     background-color: rgba(141, 141, 141, 0.5);
 }
 
