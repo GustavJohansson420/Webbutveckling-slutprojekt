@@ -18,15 +18,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.item{
-    background-color: dimgrey;
-    padding: 0;
-    text-align: center;
-    font-size: 2em;
-}
-
-.item2{
-    background-color: rgb(158, 158, 158);
+header li {
     padding: 0;
     text-align: center;
     font-size: 2em;
@@ -34,12 +26,10 @@ body {
 
 header nav a:link {
     background-color: rgb(141, 141, 141);
-    display: block;
 }
 
 header nav a:visited {
     background-color: rgb(141, 141, 141);
-    display: block;
 }
 
 header nav a:focus {
@@ -59,11 +49,15 @@ header ul {
     padding: 0%;
 }
 
-.globalmeny{
+header li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     display: block;
     padding: 20px;
+}
+
+#nuvarandesida {
+    background-color: rgb(158, 158, 158);    
 }
 
 main ul{
@@ -126,6 +120,17 @@ table {
     grid-column-end: 4;
 }
 
+caption {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: rgb(241, 101, 41);
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
 th, td {
     text-align: left;
     vertical-align: middle;
@@ -148,9 +153,10 @@ tr {
     background-color: rgb(228, 77, 38);
 }
 
-tr:nth-child(even) {
+tr:nth-child(even), thead>tr, tfoot>tr {
     background-color: rgb(241, 101, 41);
 }
+
 
 footer {
     background-color: #414141;
