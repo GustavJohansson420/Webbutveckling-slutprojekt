@@ -1,0 +1,39 @@
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+section:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+section {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+section:last-of-type {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+form div {
+    margin-top: 1em;
+}
+
+p, div:nth-child(27) {
+    font-weight: bold;
+}
+
+fieldset {
+    background-color: rgb(226, 226, 226);
+    width: 90%;
+}
+
+legend {
+    background-color: rgb(56, 56, 56);
+    color: aliceblue;
+    padding: 1em;
+    margin-left: 2em;
+}

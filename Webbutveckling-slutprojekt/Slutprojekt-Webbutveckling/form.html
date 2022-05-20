@@ -6,48 +6,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavs IT tips - form</title>
+    <link rel="stylesheet" href="style-form.css">
+    <link rel="shortcut icon" type="image/x-icon" href="bilder/favicon.ico">
 </head>
 
 <body>
     <form action="index.html" method="GET">
-        <div>
-            <label for="fn">Förnamn: </label>
-        </div>
-        <div>
-            <input type="text" id="fn" name="fn" required>
-        </div>
-        <div>
-            <label for="en">Efternamn: </label>
-        </div>
-        <div>
-            <input type="text" id="en" name="en" required>
-        </div>
-        <div>
-            <label for="lö">Lösenord: </label>
-        </div>
-        <div>
-            <input type="password" id="lö" name="lö" required>
-        </div>
-        <div>
-            <label for="em">Email: </label>
-        </div>
-        <div>
-            <input type="email" id="em" name="em" required>
-        </div>
-        <div>
-            <label for="te">Telefon: </label>
-        </div>
-        <div>
-            <input type="tel" id="te" name="te" required>
-        </div>
-        <div>
-            <label for="ff">Skriv förslag på förändringar/frågor: </label>
-        </div>
-        <div>
-            <textarea rows="20" cols="50" id="ff" name="ff"></textarea>
-        </div>
+        <section>
+            <fieldset>
+                <legend>
+                    Personuppgifter:
+                </legend>
+                <div>
+                    <label for="fn">Förnamn: </label>
+                </div>
+                <div>
+                    <input type="text" id="fn" name="fn" required>
+                </div>
+                <div>
+                    <label for="en">Efternamn: </label>
+                </div>
+                <div>
+                    <input type="text" id="en" name="en" required>
+                </div>
+                <div>
+                    <label for="lö">Lösenord: </label>
+                </div>
+                <div>
+                    <input type="password" id="lö" name="lö" required>
+                </div>
+                <div>
+                    <label for="em">Email: </label>
+                </div>
+                <div>
+                    <input type="email" id="em" name="em" required>
+                </div>
+                <div>
+                    <label for="te">Telefon: </label>
+                </div>
+                <div>
+                    <input type="tel" id="te" name="te" required>
+                </div>
+            </fieldset>
+            <p>
+                Hur bra tycker du att sidan fungerar?
+            </p>
+            <div>
+                <input type="radio" id="mb" name="hb">
+                <label for="mb">Mycket bra</label>
+            </div>
+            <div>
+                <input type="radio" id="b" name="hb">
+                <label for="b">Bra</label>
+            </div>
+            <div>
+                <input type="radio" id="sd" name="hb">
+                <label for="sd">Sådär</label>
+            </div>
+            <div>
+                <input type="radio" id="d" name="hb">
+                <label for="d">Dåligt</label>
+            </div>
+            <div>
+                <input type="radio" id="md" name="hb">
+                <label for="md">Mycket dåligt</label>
+            </div>
+        </section>
+        <section>
+            <p>
+                Vilken/vilka sidor är det fel på?
+            </p>
+            <div>
+                <input type="checkbox" id="index" name="index">
+                <label for="index">Start-sidan/Index-sidan</label>
+            </div>
+            <div>
+                <input type="checkbox" id="form" name="form">
+                <label for="form">Formulär-sidan/denna sidan</label>
+            </div>
+            <div>
+                <input type="checkbox" id="webbutveckling" name="webbutveckling">
+                <label for="webbutveckling">Webbutveckling-sidan</label>
+            </div>
+            <div>
+                <input type="checkbox" id="HTML" name="HTML">
+                <label for="HTML">HTML-sidan</label>
+            </div>
+            <div>
+                <input type="checkbox" id="CSS" name="CSS">
+                <label for="CSS">CSS-sidan</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Programmering" name="Programmering">
+                <label for="Programmering">Programmering-sidan</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Python" name="Python">
+                <label for="Python">Python-sidan</label>
+            </div>
+            <div>
+                <input type="checkbox" id="C#" name="C#">
+                <label for="C#">C#-sidan</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Tips" name="Tips">
+                <label for="Tips">Tips-sidan</label>
+            </div>
+            <div>
+                <label for="ff">Skriv förslag på förändringar/frågor: </label>
+            </div>
+            <div>
+                <textarea rows="20" cols="45" id="ff" name="ff"></textarea>
+            </div>
 
-        <input type="submit" value="submit">
+            <input type="submit" value="submit">
+        </section>
+        <section>
+            <p>
+                bakgrundsmusik om du vill: <br>
+                4th Dimension - Kanye West & Kid Cudi
+            </p>
+            <audio src="4th_Dimension.mp3" loop controls>4th Dimension - Kanye West - mp3-fil</audio>
+        </section>
     </form>
 </body>
 
