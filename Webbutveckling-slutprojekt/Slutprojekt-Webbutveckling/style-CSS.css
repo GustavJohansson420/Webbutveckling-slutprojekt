@@ -1,6 +1,12 @@
+@font-face {
+    font-family: pixel;
+    src: url(VT323-Regular.ttf);
+}
+
 h1 {
     margin-left: 10px;
-    font-size: 5ex;
+    font-size: 6ex;
+    font-family: pixel, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -63,7 +69,6 @@ header li a {
 main ul{
     list-style-type: none;
     width: 300px;
-    background-color: rgb(158, 149, 136);
     margin-top: 3%;
     margin-left: 3%;
     padding: 0;
@@ -72,19 +77,23 @@ main ul{
 main li a{
     display: block;
     color: black;
+    background-color: rgb(158, 149, 136);
     text-decoration: none;
     text-align: center;
     font-size: 22px;
     padding: 30px;
+    transform: translateX(0);
+    transition: transform 1s ease-out;
 }
 
-.itemlocal{
+#itemlocal a{
     background-color: rgb(181,166,66);
 }
 
 main li a:hover{
     background-color: rgb(181,166,66);
-
+    transform: translateX(30px);
+    transition: transform 1s ease-out;
 }
 main {
     display: grid;
@@ -103,11 +112,10 @@ main img {
 main p {
     background-color: rgb(158, 149, 136);
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
+    width: 530px;
     padding: 20px;
+    border-radius: 25px;
 }
 
 table {

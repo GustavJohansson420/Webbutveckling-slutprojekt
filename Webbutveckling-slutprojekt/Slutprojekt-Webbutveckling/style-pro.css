@@ -1,6 +1,12 @@
+@font-face {
+    font-family: pixel;
+    src: url(VT323-Regular.ttf);
+}
+
 h1 {
     margin-left: 10px;
-    font-size: 5ex;
+    font-size: 6ex;
+    font-family: pixel, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -70,7 +76,6 @@ main nav {
 main nav ul{
     list-style-type: none;
     width: 300px;
-    background-color: black;
     margin-top: 3%;
     padding: 0;
 }
@@ -78,19 +83,23 @@ main nav ul{
 main li a{
     display: block;
     color: rgb(0, 255, 21);
+    background-color: black;
     text-decoration: none;
     text-align: center;
     font-size: 22px;
     padding: 30px;
+    transform: translateX(0);
+    transition: transform 1s ease-out;
 }
 
-.itemlocal{
+#itemlocal a{
     background-color: rgb(60, 82, 55);
 }
 
 main li a:hover{
     background-color: rgb(60, 82, 55);
-
+    transform: translateX(30px);
+    transition: transform 1s ease-out;
 }
 main {
     display: grid;
@@ -126,18 +135,6 @@ main img {
     grid-column-end: 5;
 }
 
-main section:first-of-type{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: center;
-    background-color: black;
-    color: rgb(0, 255, 21);
-    margin-left: 10%;
-    margin-right: 5%;
-    margin-top: 100px;
-    padding: 15px;
-}
-
 main section {
     grid-column-start: 4;
     grid-column-end: 7;
@@ -147,6 +144,15 @@ main section {
     margin-right: 10%;
     margin-top: 100px;
     padding: 15px;
+    border-radius: 25px;
+}
+
+main section:first-of-type{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 5%;
 }
 
 main section > h2 {

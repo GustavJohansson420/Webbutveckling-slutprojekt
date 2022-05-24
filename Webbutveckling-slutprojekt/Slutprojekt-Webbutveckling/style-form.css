@@ -27,13 +27,15 @@ p, div:nth-child(27) {
 }
 
 fieldset {
-    background-color: rgb(226, 226, 226);
+    background-color: #e2e2e2;
     width: 90%;
+    border-radius: 25px;
 }
 
 legend {
-    background-color: rgb(56, 56, 56);
+    background-color: #383838;
     color: aliceblue;
     padding: 1em;
     margin-left: 2em;
+    border-radius: 5px;
 }

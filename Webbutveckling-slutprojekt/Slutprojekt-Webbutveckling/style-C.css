@@ -1,6 +1,12 @@
+@font-face {
+    font-family: pixel;
+    src: url(VT323-Regular.ttf);
+}
+
 h1 {
     margin-left: 10px;
-    font-size: 5ex;
+    font-size: 6ex;
+    font-family: pixel, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -70,7 +76,6 @@ main nav {
 main nav ul{
     list-style-type: none;
     width: 300px;
-    background-color: rgb(161, 121, 220);
     margin-top: 3%;
     padding: 0;
 }
@@ -78,19 +83,23 @@ main nav ul{
 main li a{
     display: block;
     color: whitesmoke;
+    background-color: rgb(161, 121, 220);
     text-decoration: none;
     text-align: center;
     font-size: 22px;
     padding: 30px;
+    transform: translateX(0);
+    transition: transform 1s ease-out;
 }
 
-.itemlocal{
+#itemlocal a{
     background-color: rgb(57, 0, 145);
 }
 
 main li a:hover{
     background-color: rgb(57, 0, 145);
-
+    transform: translateX(30px);
+    transition: transform 1s ease-out;
 }
 main {
     display: grid;
@@ -136,6 +145,7 @@ main section{
     margin-right: 5%;
     margin-top: 100px;
     padding: 15px;
+    border-radius: 25px;
 }
 
 main article {
@@ -147,6 +157,7 @@ main article {
     margin-right: 10%;
     margin-top: 100px;
     padding: 15px;
+    border-radius: 25px;
 }
 
 main article > h2 {
