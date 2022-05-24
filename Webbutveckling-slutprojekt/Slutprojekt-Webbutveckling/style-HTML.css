@@ -76,25 +76,30 @@ main ul{
 
 main li a{
     display: block;
-    color: black;
-    background-color: rgb(158, 149, 136);
+    color: whitesmoke;
+    background-color: rgb(23, 23, 23);
     text-decoration: none;
     text-align: center;
     font-size: 22px;
     padding: 30px;
+    border: 2px solid rgb(23, 23, 23);
+    border-radius: 10px;
     transform: translateX(0);
     transition: transform 1s ease-out;
 }
 
 #itemlocal a{
-    background-color: rgb(181,166,66);
+    color: black;
+    background-color: rgb(187, 189, 189);
 }
 
-main li a:hover{
-    background-color: rgb(181,166,66);
+main li a:hover {
+    color: black;
+    background-color: rgb(187, 189, 189);
     transform: translateX(30px);
     transition: transform 1s ease-out;
 }
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -110,11 +115,12 @@ main img {
 }
 
 main p {
-    background-color: rgb(158, 149, 136);
+    background-color: rgb(141, 141, 141);
     text-align: center;
     margin: auto;
     width: 530px;
     padding: 20px;
+    border: 2px solid black;
     border-radius: 25px;
 }
 
