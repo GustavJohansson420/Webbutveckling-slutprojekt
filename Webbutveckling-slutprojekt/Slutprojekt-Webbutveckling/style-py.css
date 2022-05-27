@@ -91,7 +91,7 @@ main li a{
     border: 2px solid rgb(23, 23, 23);
     border-radius: 10px;
     transform: translateX(0);
-    transition: transform 0.6s ease-out, font-size 0.6s ease-out, padding 0.6s ease-out, background-color 0.6s ease-out;
+    transition: transform 0.6s ease-out, font-size 0.6s ease-out, padding 0.6s ease-out, background-color 0.6s ease-out, padding 0.6s ease-out;
 }
 
 #itemlocal a{
@@ -101,8 +101,9 @@ main li a{
 main li a:hover{
     background-color: hsl(207, 43%, 41%);
     font-size: 2em;
+    padding: 24px;
     transform: translateX(30px);
-    transition: transform 0.6s ease-out, font-size 0.6s ease-out, padding 0.6s ease-out, background-color 0.6s ease-out;
+    transition: transform 0.6s ease-out, font-size 0.6s ease-out, padding 0.6s ease-out, background-color 0.6s ease-out, padding 0.6s ease-out;
 }
 main {
     display: grid;
@@ -127,7 +128,7 @@ main div img {
     margin-top: 20px; 
 }
 
-main img {
+main figure img {
     display: block;
     max-height: 450px;
     max-width: 450px;

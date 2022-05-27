@@ -171,6 +171,13 @@ tr:nth-child(even), thead>tr, tfoot>tr {
     background-color: rgb(241, 101, 41);
 }
 
+svg {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 footer {
     background-color: #414141;

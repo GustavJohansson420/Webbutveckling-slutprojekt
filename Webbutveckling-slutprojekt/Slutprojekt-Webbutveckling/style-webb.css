@@ -137,6 +137,14 @@ iframe {
     grid-column-end: 4;
 }
 
+svg {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer {
     background-color: #414141;
     padding: 10px ;
