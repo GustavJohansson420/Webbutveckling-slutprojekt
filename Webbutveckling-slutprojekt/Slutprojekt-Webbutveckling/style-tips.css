@@ -1,0 +1,96 @@
+@font-face {
+    font-family: pixel;
+    src: url(VT323-Regular.ttf);
+}
+
+h1 {
+    margin-left: 10px;
+    font-size: 6ex;
+    font-family: pixel, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(196, 196, 196);
+}
+
+.Logo {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header li {
+    padding: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+header nav a:link {
+    background-color: rgb(141, 141, 141);
+}
+
+header nav a:visited {
+    background-color: rgb(141, 141, 141);
+}
+
+header nav a:focus {
+    background-color: rgb(158, 158, 158);
+}
+
+header nav a:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+header nav a:active {
+    background-color: rgba(141, 141, 141, 0.5);
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0%;
+}
+
+header li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+#nuvarandesida {
+    background-color: rgb(158, 158, 158);    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main > h2 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 2em;
+}
+
+main div {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-image: url('bilder/svart-trä.Jpeg');
+}
+
+main div p {
+    color: snow;
+    text-align: center;
+    width: 1000px;
+    padding: 20px;
+}

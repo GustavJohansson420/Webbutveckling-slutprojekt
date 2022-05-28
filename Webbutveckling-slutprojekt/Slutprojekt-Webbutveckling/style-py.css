@@ -117,6 +117,7 @@ main div {
 
 main div h2 {
     text-align: center;
+    font-size: 2em;
 }
 
 main div img {
@@ -128,6 +129,11 @@ main div img {
     margin-top: 20px; 
 }
 
+main figure {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
 main figure img {
     display: block;
     max-height: 450px;
@@ -135,8 +141,12 @@ main figure img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px; 
-    grid-column-start: 3;
-    grid-column-end: 5;
+}
+
+main figure figcaption {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
 }
 
 main section {
