@@ -22,7 +22,12 @@ form div {
     margin-top: 1em;
 }
 
-p, div:nth-child(27) {
+.textarea {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.låt {
     font-weight: bold;
 }
 

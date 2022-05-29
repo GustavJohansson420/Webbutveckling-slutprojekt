@@ -48,9 +48,9 @@
                     <input type="tel" id="te" name="te" required>
                 </div>
             </fieldset>
-            <p>
+            <h2>
                 Hur bra tycker du att sidan fungerar?
-            </p>
+            </h2>
             <div>
                 <input type="radio" id="mb" name="hb">
                 <label for="mb">Mycket bra</label>
@@ -60,7 +60,7 @@
                 <label for="b">Bra</label>
             </div>
             <div>
-                <input type="radio" id="sd" name="hb">
+                <input type="radio" id="sd" name="hb" checked>
                 <label for="sd">Sådär</label>
             </div>
             <div>
@@ -71,11 +71,28 @@
                 <input type="radio" id="md" name="hb">
                 <label for="md">Mycket dåligt</label>
             </div>
+            <h2>
+                Vilken sida är din favorit?
+            </h2>
+            <div>
+                <label for="fav">Välj sida:</label>
+                <select name="fav" id="fav">
+                    <option value="index" selected>Start-sidan/Index-sidan</option>
+                    <option value="form">Formulär-sidan/denna sidan</option> 
+                    <option value="webbutveckling">Webbutveckling-sidan</option> 
+                    <option value="HTML">HTML-sidan</option> 
+                    <option value="CSS">CSS-sidan</option> 
+                    <option value="Programmering">Programmering-sidan</option> 
+                    <option value="Python">Python-sidan</option> 
+                    <option value="C#">C#-sidan</option> 
+                    <option value="Tips">Tips-sidan</option>  
+                </select>
+            </div>
         </section>
         <section>
-            <p>
+            <h2>
                 Vilken/vilka sidor är det fel på?
-            </p>
+            </h2>
             <div>
                 <input type="checkbox" id="index" name="index">
                 <label for="index">Start-sidan/Index-sidan</label>
@@ -113,7 +130,7 @@
                 <label for="Tips">Tips-sidan</label>
             </div>
             <div>
-                <label for="ff">Skriv förslag på förändringar/frågor: </label>
+                <label class="textarea" for="ff">Skriv förslag på förändringar/frågor: </label>
             </div>
             <div>
                 <textarea rows="20" cols="45" id="ff" name="ff"></textarea>
@@ -122,7 +139,7 @@
             <input type="submit" value="submit">
         </section>
         <section>
-            <p>
+            <p class="låt">
                 bakgrundsmusik om du vill: <br>
                 4th Dimension - Kanye West & Kid Cudi
             </p>

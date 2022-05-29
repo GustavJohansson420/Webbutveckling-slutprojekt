@@ -85,7 +85,9 @@ main div {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
+    border-radius: 20px;
     background-image: url('bilder/svart-trä.Jpeg');
+    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
 }
 
 main div p {
@@ -93,4 +95,62 @@ main div p {
     text-align: center;
     width: 1000px;
     padding: 20px;
+}
+
+main section {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    color: snow;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
+    background-image: url('bilder/svart-trä.Jpeg');
+    margin-left: 40px;
+    margin-right: 200px;
+}
+
+main section:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 200px;
+    margin-right: 40px;
+}
+
+main section > img {
+    height: 130px;
+    vertical-align: middle;
+}
+
+main section h3 {
+    display: inline;
+    margin-left: 100px;
+}
+
+main section p {
+    padding: 20px;
+}
+
+main section a {
+    color: snow;
+}
+
+footer {
+    background-color: #414141;
+    padding: 10px ;
+    margin-top: 100px;
+}
+
+footer div{
+    width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer img{
+    height: 80px; 
+}
+
+footer h3, footer p{
+    text-align: center;
+    color: white;
 }
