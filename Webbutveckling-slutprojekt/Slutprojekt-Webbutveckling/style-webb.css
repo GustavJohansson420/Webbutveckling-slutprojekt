@@ -128,14 +128,42 @@ main p {
     border-radius: 25px;
 }
 
-iframe {
+main h2 {
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
-    height: 480px;
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+.target {
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.target div {
+    display: none;
+    margin-top: 10px;
+}
+
+.target div:target {
+    display: block;
+}
+
+.target a {
+    padding: 5px;
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    border: 3px solid black;
+    background-color: rgb(255, 110, 110);
+}
+
+iframe {
+    width: 800px;
+    height: 480px;
 }
 
 svg {
@@ -164,4 +192,27 @@ footer img{
 footer h3, footer p{
     text-align: center;
     color: white;
+}
+
+@media screen and (max-width: 1150px) {
+    main ul {
+        width: 150px;
+    }
+
+    main ul a {
+        font-size: 0.8em;
+    }
+
+    main p {
+        width: 330px;
+    }
+
+    main div img {
+        max-height: 150px;
+        max-width: 150px;
+    }
+
+    main div h2 {
+        font-size: 1.5em;
+    }
 }
