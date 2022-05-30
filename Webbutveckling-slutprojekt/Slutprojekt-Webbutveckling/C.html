@@ -1,43 +1,43 @@
-<!DOCTYPE html>
-<html lang="sv">
+<!DOCTYPE html> <!--Gör så att vi använder HTML5-->
+<html lang="sv"> <!--Säger att vår text är på svenska-->
 
-<head>
-    <meta charset="UTF-8">
+<head> <!--I head taggen så skriver man det som inte kommer synas på hemsidan-->
+    <meta charset="UTF-8"> <!--Ska finnas i alla HTML sidor och gör så att vi kan använda alla tecken i världen-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavs IT tips - C#</title>
-    <link rel="stylesheet" href="style-C.css">
-    <link rel="shortcut icon" type="image/x-icon" href="bilder/favicon.ico">
+    <title>Gustavs IT tips - C#</title> <!--Titlen som visas i sidens tab-->
+    <link rel="stylesheet" href="style-C.css"> <!--Gör så att vi använder oss av en css fil (Extern CSS)-->
+    <link rel="shortcut icon" type="image/x-icon" href="bilder/favicon.ico"> <!--Gör så att vi får en liten bild jämte titlen uppe i sidans tab-->
 </head>
 
-<body>
-    <header>
-        <a href="index.html"><img class="Logo" src="bilder/Logo.png" alt="Logo"></a>
-        <h1>Gustavs IT tips</h1>
-        <nav>
-            <ul class="container">
-                <li><a href="webbutveckling.html">Webbutveckling</a></li>
-                <li><a id="nuvarandesida" href="programmering.html">Programmering</a></li>
-                <li><a href="tips.html">Tips</a></li>
+<body> <!--Här skriver man det som kommer synas på sidan-->
+    <header> <!--Header är det som är högst upp på sidan som t.ex h1 och global navigerings meny-->
+        <a href="index.html"><img class="Logo" src="bilder/Logo.png" alt="Logo"></a> <!--En logo bild med en länk till index-sidan om man trycker på bilden-->
+        <h1>Gustavs IT tips</h1> <!--Huvudrubriken på sidan, kan bara finnas en h1 på varje sida-->
+        <nav> <!--I nav skriver vi en navigerings meny i detta fallet en global meny-->
+            <ul class="container"> <!--ul står för "unordered list" och är en lista där itemsen inte är numrerade-->
+                <li><a href="webbutveckling.html">Webbutveckling</a></li> <!--li står för list item och här skriver vi ett item i listan, i detta fallet en länk till en annan sida-->
+                <li><a id="nuvarandesida" href="programmering.html">Programmering</a></li> 
+                <li><a href="tips.html">Tips</a></li> 
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
-            <h2>C#</h2>
-            <img src="bilder/c-sharp.png" alt="C-sharpBild">
+    <main> <!--I main skriver man "main" innehållet på sidan, här skriver man det mesta innehållet om sidan-->
+        <div> <!--En div sätter man andra olika tagger i en container så man sedan kan styla hela diven med css-->
+            <h2>C#</h2> <!--h2 är den näst mest viktiga rubriken efter h1, till skillnad från h1 kan det finnas flera h2 på en sida-->
+            <img src="bilder/c-sharp.png" alt="C-sharpBild"> <!--En bild på c-sharp loggan-->
         </div>
-        <img src="bilder/c-sharpkod.png" alt="c-sharpkod">
-        <nav>
+        <img src="bilder/c-sharpkod.png" alt="c-sharpkod"> <!--En bild på c-sharp kod-->
+        <nav> <!--En lokal meny-->
             <ul>
                 <li><a href="programmering.html">Programmering</a></li>
                 <li><a href="python.html">Python</a></li>
                 <li id="itemlocal"><a href="C#.html">C#</a></li>
             </ul>
         </nav>
-        <section>
+        <section> <!--En sektion av sidan-->
             <h2>Info:</h2>
-            <p>
+            <p> <!--Här skriver vi vanlig text, i detta fallet info om c-sharp-->
                 C# är ett programmeringsspråk som gavs ut år 2000 av microsoft och är del av .NET-plattformen. 
                 programmeringsspråkets utveckling startades av Anders Hejlsberg som rekryterats från Borland där han skapat 
                 TurboPascal och varit chefsarkitekt för Delphi. Språket är baserat på ett annat programmeringspråk vid namn C++ därav 
@@ -46,10 +46,10 @@
                 stoppa försök till att använda oinitierade variabler och automatisk skräpinsamling.
             </p>
         </section>
-        <article>
+        <article> <!--En artikel-->
             <h2>En artikel av Microsoft</h2>
             <p>
-                I en artikel av Microsoft 03/18/2022 beskriver de c# såhär:<br>
+                I en artikel av Microsoft 03/18/2022 beskriver de c# såhär:<br> <!--br gör en ny rad-->
                 <br>
                 "C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables 
                 developers to build many types of secure and robust applications that run in . NET. C# has its roots in the C family of 
@@ -60,14 +60,14 @@
             
         </article>
     </main>
-    <footer>
+    <footer> <!--I footer skriver man det som är nederst på en sida som t.ex länkar till skaparens sociala medier och e-mail-->
         <div>
             <a href="https://www.instagram.com/gustav_johansson2004/"><img src="bilder/insta.png" alt="instagramlänk"></a>
             <a href="https://www.facebook.com/gustav.johansson.963"><img src="bilder/facebook.png" alt="facebooklänk"></a>
             <a href="https://twitter.com/Guswe420"><img src="bilder/twitter.png" alt="twitterlänk"></a>
             <a href="https://www.tiktok.com/@frankdamonkey420"><img src="bilder/tiktok.png" alt="tiktoklänk"></a>
         </div>
-        <h3>gujo04002@utb.vaxjo.se</h3>
+        <h3>gujo04002@utb.vaxjo.se</h3> <!--h3 är den tredje mest viktiga rubriken efter h2, till skillnad från h1 kan det finnas flera h3 på en sida-->
         <p>Snälla följ mig Tim.//frankdamonkey420 </p>
     </footer>
 </body>

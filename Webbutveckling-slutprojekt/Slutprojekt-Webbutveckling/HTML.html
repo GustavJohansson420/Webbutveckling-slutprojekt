@@ -1,37 +1,37 @@
-<!DOCTYPE html>
-<html lang="sv">
+<!DOCTYPE html> <!--Gör så att vi använder HTML5-->
+<html lang="sv"> <!--Säger att vår text är på svenska-->
 
-<head>
-    <meta charset="UTF-8">
+<head> <!--I head taggen så skriver man det som inte kommer synas på hemsidan-->
+    <meta charset="UTF-8"> <!--Ska finnas i alla HTML sidor och gör så att vi kan använda alla tecken i världen-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavs IT tips - HTML</title>
-    <link rel="stylesheet" href="style-HTML.css">
-    <link rel="shortcut icon" type="image/x-icon" href="bilder/favicon.ico">
+    <title>Gustavs IT tips - HTML</title> <!--Titlen som visas i sidens tab-->
+    <link rel="stylesheet" href="style-HTML.css"> <!--Gör så att vi använder oss av en css fil (Extern CSS)-->
+    <link rel="shortcut icon" type="image/x-icon" href="bilder/favicon.ico"> <!--Gör så att vi får en liten bild jämte titlen uppe i sidans tab-->
 </head>
 
-<body>
-    <header>
-        <a href="index.html"><img class="Logo" src="bilder/Logo.png" alt="Logo"></a>
-        <h1>Gustavs IT tips</h1>
-        <nav>
-            <ul class="container">
-                <li><a id="nuvarandesida" href="webbutveckling.html">Webbutveckling</a></li>
+<body> <!--Här skriver man det som kommer synas på sidan-->
+    <header> <!--Header är det som är högst upp på sidan som t.ex h1 och global navigerings meny-->
+        <a href="index.html"><img class="Logo" src="bilder/Logo.png" alt="Logo"></a> <!--En logo bild med en länk till index-sidan om man trycker på bilden-->
+        <h1>Gustavs IT tips</h1> <!--Huvudrubriken på sidan, kan bara finnas en h1 på varje sida-->
+        <nav> <!--I nav skriver vi en navigerings meny i detta fallet en global meny-->
+            <ul class="container"> <!--ul står för "unordered list" och är en lista där itemsen inte är numrerade-->
+                <li><a id="nuvarandesida" href="webbutveckling.html">Webbutveckling</a></li> <!--li står för list item och här skriver vi ett item i listan, i detta fallet en länk till en annan sida-->
                 <li><a href="programmering.html">Programmering</a></li>
                 <li><a href="tips.html">Tips</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <nav>
+    <main> <!--I main skriver man "main" innehållet på sidan, här skriver man det mesta innehållet om sidan-->
+        <nav> <!--En lokal meny-->
             <ul>
                 <li><a href="webbutveckling.html">Webbutveckling</a></li>
                 <li id="itemlocal"><a href="HTML.html">HTML</a></li>
                 <li><a href="CSS.html">CSS</a></li>
             </ul>
         </nav>
-        <img src="bilder/HTMLlogo.png" alt="HTML logo">
-        <p>
+        <img src="bilder/HTMLlogo.png" alt="HTML logo"> <!--En bild på HTML loggan-->
+        <p> <!--Här skriver vi vanlig text, i detta fallet info om HTML-->
             HyperText Markup Language(HTML) är standardspråket för webbsidor. Med hjälp
             av HTML kan du skapa dina egna hemsidor på internet. HTML är lätt att förstå och
             lära sig och med hjälp av olika taggar kommer du snabbt lära dig hur man skapar
@@ -39,18 +39,18 @@
             vanligaste taggarna inom HTML och vad de gör eller klick på CSS länken i den
             lokala menyn till vänster för att lära dig om vad man använder det till.
         </p>
-        <table>
-            <caption>Vanliga HTML taggar</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Tagg:</th>
+        <table> <!--skapar en tabell-->
+            <caption>Vanliga HTML taggar</caption> <!--En rubrik till tabellen-->
+            <thead> <!--Header i tabellen-->
+                <tr> <!--I tr är det en rad i tabellen-->
+                    <th scope="col">Tagg:</th> <!--En ruta där det står vad td ska innehålla-->
                     <th scope="col">Vad den gör:</th>
                     <th scope="col">Exempel:</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody> <!--Main i tabellen-->
                 <tr>
-                    <td>h1</td>
+                    <td>h1</td> <!--En ruta i tabellen med innehåll/data om det som står i th-->
                     <td>&lt;h1&gt; gör så man kan skriva huvudtitlen på sin sida och det kan bara finnas en &lt;h1&gt;
                         på
                         varje sida. Sedan finns det &lt;h2&gt;, &lt;h3&gt; osv som också är titlar men dessa är mindre
@@ -70,7 +70,7 @@
                     <td>&lt;img src="bilder/hund.png"&gt;&lt;/img&gt;</td>
                 </tr>
             </tbody>
-            <tfoot>
+            <tfoot> <!--footer i tabellen-->
                 <tr>
                     <td>a</td>
                     <td>&lt;a&gt; används för att skapa en länk</td>
@@ -78,18 +78,18 @@
                 </tr>
             </tfoot>
         </table>
-        <svg width="100" height="100">
+        <svg width="100" height="100"> <!--gör en form utan att behöva använda sig av bilder, man gör formen själv, i detta fallet en cirkel-->
             <circle cx="50" cy="50" r="40" stroke="rgb(23, 23, 23)" stroke-width="4" fill="rgb(228, 77, 38)" />
         </svg>
     </main>
-    <footer>
-        <div>
+    <footer> <!--I footer skriver man det som är nederst på en sida som t.ex länkar till skaparens sociala medier och e-mail-->
+        <div> <!--En div sätter man andra olika tagger i en container så man sedan kan styla hela diven med css-->
             <a href="https://www.instagram.com/gustav_johansson2004/"><img src="bilder/insta.png" alt="instagramlänk"></a>
             <a href="https://www.facebook.com/gustav.johansson.963"><img src="bilder/facebook.png" alt="facebooklänk"></a>
             <a href="https://twitter.com/Guswe420"><img src="bilder/twitter.png" alt="twitterlänk"></a>
             <a href="https://www.tiktok.com/@frankdamonkey420"><img src="bilder/tiktok.png" alt="tiktoklänk"></a>
         </div>
-        <h3>gujo04002@utb.vaxjo.se</h3>
+        <h3>gujo04002@utb.vaxjo.se</h3> <!--h3 är den tredje mest viktiga rubriken efter h2, till skillnad från h1 kan det finnas flera h3 på en sida-->
         <p>Snälla följ mig Tim.//frankdamonkey420 </p>
     </footer>
 </body>

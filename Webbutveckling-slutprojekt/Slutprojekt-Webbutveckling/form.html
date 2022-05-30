@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="sv">
+<!DOCTYPE html> <!--Gör så att vi använder HTML5-->
+<html lang="sv"> <!--Säger att vår text är på svenska-->
 
-<head>
-    <meta charset="UTF-8">
+<head> <!--I head taggen så skriver man det som inte kommer synas på hemsidan-->
+    <meta charset="UTF-8"> <!--Ska finnas i alla HTML sidor och gör så att vi kan använda alla tecken i världen-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavs IT tips - form</title>
-    <link rel="stylesheet" href="style-form.css">
-    <link rel="shortcut icon" type="image/x-icon" href="bilder/favicon.ico">
+    <title>Gustavs IT tips - form</title> <!--Titlen som visas i sidens tab-->
+    <link rel="stylesheet" href="style-form.css"> <!--Gör så att vi använder oss av en css fil (Extern CSS)-->
+    <link rel="shortcut icon" type="image/x-icon" href="bilder/favicon.ico"> <!--Gör så att vi får en liten bild jämte titlen uppe i sidans tab-->
 </head>
 
-<body>
-    <form action="index.html" method="GET">
-        <section>
-            <fieldset>
-                <legend>
+<body> <!--Här skriver man det som kommer synas på sidan-->
+    <form action="index.html" method="GET"> <!--Gör ett formulär-->
+        <section> <!--En sektion av sidan-->
+            <fieldset> <!--Grupperar relaterande element i ett formulär, i detta fallet personuppgifter-->
+                <legend> <!--Rubriken till fieldset-->
                     Personuppgifter:
                 </legend>
-                <div>
-                    <label for="fn">Förnamn: </label>
+                <div> <!--En div sätter man andra olika tagger i en container så man sedan kan styla hela diven med css-->
+                    <label for="fn">Förnamn: </label> <!--definerar en label till olika element som t.ex input-->
                 </div>
                 <div>
-                    <input type="text" id="fn" name="fn" required>
+                    <input type="text" id="fn" name="fn" required> <!--Här kan användaren skriva in data av typen "text"-->
                 </div>
                 <div>
                     <label for="en">Efternamn: </label>
@@ -33,26 +33,26 @@
                     <label for="lö">Lösenord: </label>
                 </div>
                 <div>
-                    <input type="password" id="lö" name="lö" required>
+                    <input type="password" id="lö" name="lö" required> <!--Här kan användaren skriva in data av typen "password"-->
                 </div>
                 <div>
                     <label for="em">Email: </label>
                 </div>
                 <div>
-                    <input type="email" id="em" name="em" required>
+                    <input type="email" id="em" name="em" required> <!--Här kan användaren skriva in data av typen "email"-->
                 </div>
                 <div>
                     <label for="te">Telefon: </label>
                 </div>
                 <div>
-                    <input type="tel" id="te" name="te" required>
+                    <input type="tel" id="te" name="te" required> <!--Här kan användaren skriva in data av typen "tel"-->
                 </div>
             </fieldset>
-            <h2>
+            <h2> <!--h2 är den näst mest viktiga rubriken efter h1, till skillnad från h1 kan det finnas flera h2 på en sida-->
                 Hur bra tycker du att sidan fungerar?
             </h2>
             <div>
-                <input type="radio" id="mb" name="hb">
+                <input type="radio" id="mb" name="hb"> <!--En input knapp av typen "radio"-->
                 <label for="mb">Mycket bra</label>
             </div>
             <div>
@@ -76,8 +76,8 @@
             </h2>
             <div>
                 <label for="fav">Välj sida:</label>
-                <select name="fav" id="fav">
-                    <option value="index" selected>Start-sidan/Index-sidan</option>
+                <select name="fav" id="fav"> <!--Skapar en dropdown meny med olika "options"-->
+                    <option value="index" selected>Start-sidan/Index-sidan</option> <!--Ett alternativ i select-->
                     <option value="form">Formulär-sidan/denna sidan</option> 
                     <option value="webbutveckling">Webbutveckling-sidan</option> 
                     <option value="HTML">HTML-sidan</option> 
@@ -94,7 +94,7 @@
                 Vilken/vilka sidor är det fel på?
             </h2>
             <div>
-                <input type="checkbox" id="index" name="index">
+                <input type="checkbox" id="index" name="index"> <!--En input knapp av typen "checkbox"-->
                 <label for="index">Start-sidan/Index-sidan</label>
             </div>
             <div>
@@ -133,17 +133,17 @@
                 <label class="textarea" for="ff">Skriv förslag på förändringar/frågor: </label>
             </div>
             <div>
-                <textarea rows="20" cols="45" id="ff" name="ff"></textarea>
+                <textarea rows="20" cols="45" id="ff" name="ff"></textarea> <!--En stor yta där användaren kan skriva in data-->
             </div>
 
-            <input type="submit" value="submit">
+            <input type="submit" value="submit"> <!--En knapp där användaren skickar in det han/hon har skrivit i formuläret-->
         </section>
         <section>
-            <p class="låt">
-                bakgrundsmusik om du vill: <br>
+            <p class="låt"> <!--Här skriver vi vanlig text, i detta fallet info om låten-->
+                bakgrundsmusik om du vill: <br> <!--br gör en ny rad--> 
                 4th Dimension - Kanye West & Kid Cudi
             </p>
-            <audio src="4th_Dimension.mp3" loop controls>4th Dimension - Kanye West & Kid Cudi - mp3-fil</audio>
+            <audio src="4th_Dimension.mp3" loop controls>4th Dimension - Kanye West & Kid Cudi - mp3-fil</audio> <!--Ljudfil med justerings knappar-->
         </section>
     </form>
 </body>
