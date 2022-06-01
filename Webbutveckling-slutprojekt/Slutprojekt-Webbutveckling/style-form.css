@@ -1,43 +1,43 @@
-form {
+form { /*Gör så att formuläret är en grid med 5 kollumner som är lika stora*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-section:first-of-type {
+section:first-of-type { /*Gör så att första sektionen kan ta upp utrymmet kollumn 1-2*/
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-section {
+section { /*Gör så att sektionen som inte är först eller sist kan ta upp utrymmet kollumn 3-4*/
     grid-column-start: 3;
     grid-column-end: 5;
 }
 
-section:last-of-type {
+section:last-of-type { /*Gör så att sista sektionen kan ta upp utrymmet kollumn 5*/
     grid-column-start: 5;
     grid-column-end: 6;
 }
 
-form div {
+form div { /*Gör så att alla divs i formuläret har 1em utrymme ovanför*/
     margin-top: 1em;
 }
 
-.textarea {
+.textarea { /*Gör så att labelen till textarean är i fetstil och är 1.5em stor*/
     font-weight: bold;
     font-size: 1.5em;
 }
 
-.låt {
+.låt { /*Gör så att texten till audion är i fetstil*/
     font-weight: bold;
 }
 
-fieldset {
+fieldset { /*Gör så att fieldset har en viss bakgrundsfärg, att den är 90% av utrymmet bred, har runda hörn*/
     background-color: #e2e2e2;
     width: 90%;
     border-radius: 25px;
 }
 
-legend {
+legend { /*Gör så att legend har en viss bakgrundsfärg, en viss färg, 1em utrymme innanför bordern, 2em utrymme till vänster, runda hörn*/
     background-color: #383838;
     color: aliceblue;
     padding: 1em;
@@ -45,7 +45,7 @@ legend {
     border-radius: 5px;
 }
 
-input:checked {
+input:checked { /*När man har checkat i en input så blir markören 15px bred och hög*/
     width: 15px;
     height: 15px;
 }

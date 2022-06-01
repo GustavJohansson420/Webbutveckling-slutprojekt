@@ -179,6 +179,7 @@ footer div{ /*Diven i footern blir 335px bred och hamnar i mitten*/
     margin-left: auto;
     margin-right: auto;
 }
+
 footer img{ /*Bilden i footer blir 80px hög*/
     height: 80px; 
 }

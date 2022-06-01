@@ -82,7 +82,7 @@ main nav ul{ /*Gör så att texten i den lokala menyn inte har någon dekoration
     padding: 0;
 }
 
-main li a{ /*Gör så att länken tar upp hela widthen, ger den färg, ger den bakgrundsfärg, ingen text dekoration, texten är i mitten, textstorlek 22px, har 30px utrymme innanför bordern, gör en skugga med en viss färg, har en transform och en transision så att det är animerat när man slutar hovra på länken så att den åker tillbaka till sitt ursprungliga ställe*/
+main li a{ /*Gör så att länken tar upp hela widthen, ger den färg, ger den bakgrundsfärg, ingen text dekoration, texten är i mitten, textstorlek 22px, har 30px utrymme innanför bordern, gör en skugga med en viss färg, runda hörn, har en transform och en transision så att det är animerat när man slutar hovra på länken så att den åker tillbaka till sitt ursprungliga ställe*/
     display: block;
     color: whitesmoke;
     background-color: rgb(161, 121, 220);
@@ -91,6 +91,7 @@ main li a{ /*Gör så att länken tar upp hela widthen, ger den färg, ger den b
     font-size: 22px;
     padding: 30px;
     box-shadow: 0 0 10px rgb(255, 0, 242), 0 0 10px rgb(255, 0, 242), 0 0 10px rgb(255, 0, 242), 0 0 10px rgb(255, 0, 242);
+    border-radius: 10px;
     transform: translateX(0);
     transition: transform 0.6s ease-out, color 0.6s ease-out, text-shadow 0.6s ease-out;
 }
@@ -185,6 +186,7 @@ footer div{ /*Diven i footern blir 335px bred och hamnar i mitten*/
     margin-left: auto;
     margin-right: auto;
 }
+
 footer img{ /*Bilden i footer blir 80px hög*/
     height: 80px; 
 }

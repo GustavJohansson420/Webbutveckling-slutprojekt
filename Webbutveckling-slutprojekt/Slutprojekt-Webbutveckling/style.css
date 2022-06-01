@@ -1,79 +1,76 @@
-@font-face {
+@font-face { /*Hämtar en font från google och namnger den fonten "pixel"*/
     font-family: pixel;
     src: url(VT323-Regular.ttf);
 }
 
-h1 {
+h1 { /*Gör så att huvudrubriken får 10px utrymme till vänster, gör så att texten är 6ex stor, gör så att texten får fonten "pixlar" och om den inte funkar så får den "Arial" osv*/
     margin-left: 10px;
     font-size: 6ex;
     font-family: pixel, Arial, Helvetica, sans-serif;
 }
-
-body {
+ 
+body { /*Gör så att det inte finns något utrymme från alla håll på body samt ändrar bakgrundsfärgen*/
     margin: 0;
     background-color: rgb(196, 196, 196);
 }
 
-.Logo {
+.Logo { /*Gör så att min logga får 10px utrymme uppifrån och från vänster*/
     margin-left: 10px;
     margin-top: 10px;
 }
 
-.container {
+.container { /*Gör en grid till den globala menyn med 3 kolumner som är lika stora, gör så att texten inte har någon dekoration som t.ex understruket, gör så att den har 0 utrymme innanför bordern*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
 }
 
-header li {
+header li { /*Gör så att alla items i den globala menyn får 0 utrymme innanför bordern, så att texten hamnar i mitten, och gör texten i storlek 2em*/
     padding: 0;
     text-align: center;
     font-size: 2em;
 }
 
-header nav a:link {
+header nav a:link { /*Gör så att länken har en viss färg när den är normal*/
     background-color: rgb(141, 141, 141);
 }
 
-header nav a:visited {
+header nav a:visited { /*Gör så att länken har en viss färg när den har blivit besökt*/
     background-color: rgb(141, 141, 141);
 }
 
-header nav a:focus {
+header nav a:focus { /*Gör så att länken har en viss färg när man hovrar med tangentbordet över den*/
     background-color: rgb(158, 158, 158);
 }
 
-header nav a:hover {
+header nav a:hover { /*Gör så att länken har en viss färg när man hovrar med musen över den*/
     background-color: rgb(158, 158, 158);
 }
 
-header nav a:active {
+header nav a:active { /*Gör så att länken har en viss färg när man trycker på den*/
     background-color: rgba(141, 141, 141, 0.5);
 }
 
-header ul {
-    list-style-type: none;
-    padding: 0%;
-}
-
-header li a {
+header li a { /*Gör så att länken har färgen svart, ingen text dekoration, gör så att den tar upp hela widthen, gör så att den har 20px utrymme innanför bordern*/
     color: rgb(0, 0, 0);
     text-decoration: none;
     display: block;
     padding: 20px;
 }
 
-main h2 {
+main h2 { /*Gör så rubriken i main är i mitten och har 100px utrymme ovanför*/
     text-align: center;
     margin-top: 100px;
 }
 
-main img{
+main img { /*Gör så bilden i main tar upp hela widthen och är i miiten*/
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-main p {
+main p { /*Gör så texten i main har en viss bakgrundsfärg, är i mitten, 650px bred, har 20px utrymme innanför bordern, runda hörn*/
     background-color: rgb(170, 170, 170);
     text-align: center;
     width: 650px;
@@ -83,27 +80,27 @@ main p {
     border-radius: 25px;
 }
 
-.formulär {
+.formulär { /*Gör så att formulär-bilden är 150px hög och bred*/
     height: 150px;
     width: 150px;
 }
 
-footer {
+footer { /*Footern får en viss bakgrundsfärg, får 10px utrymme innanför bordern, 100px utrymme uppifrån*/
     background-color: #414141;
     padding: 10px ;
     margin-top: 100px;
 }
 
-footer div{
+footer div{ /*Diven i footern blir 335px bred och hamnar i mitten*/
     width: 335px;
     margin-left: auto;
     margin-right: auto;
 }
-footer img{
+footer img{ /*Bilden i footer blir 80px hög*/
     height: 80px; 
 }
 
-footer h3, footer p{
+footer h3, footer p{ /*Rubriken och texten hamnar i mitten och är vit*/
     text-align: center;
     color: white;
 }
