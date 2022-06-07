@@ -13,7 +13,7 @@
 <body> <!--Här skriver man det som kommer synas på sidan-->
     <header> <!--Header är det som är högst upp på sidan som t.ex h1 och global navigerings meny-->
         <a href="index.html"><img class="Logo" src="bilder/Logo.png" alt="Logo"></a> <!--En logo bild med en länk till index-sidan om man trycker på bilden-->
-        <h1>Gustavs IT tips</h1> <!--Huvudrubriken på sidan, kan bara finnas en h1 på varje sida-->
+        <h1 tabindex="0">Gustavs IT tips</h1> <!--Huvudrubriken på sidan, kan bara finnas en h1 på varje sida-->
         <nav> <!--I nav skriver vi en navigerings meny i detta fallet en global meny-->
             <ul class="container"> <!--ul står för "unordered list" och är en lista där itemsen inte är numrerade-->
                 <li><a id="nuvarandesida" href="webbutveckling.html">Webbutveckling</a></li> <!--li står för list item och här skriver vi ett item i listan, i detta fallet en länk till en annan sida-->
@@ -30,8 +30,8 @@
                 <li><a href="CSS.html">CSS</a></li>
             </ul>
         </nav>
-        <img src="bilder/HTMLlogo.png" alt="HTML logo"> <!--En bild på HTML loggan-->
-        <p> <!--Här skriver vi vanlig text, i detta fallet info om HTML-->
+        <img src="bilder/HTMLlogo.png" alt="HTML logo" tabindex="0"> <!--En bild på HTML loggan-->
+        <p tabindex="0"> <!--Här skriver vi vanlig text, i detta fallet info om HTML-->
             HyperText Markup Language(HTML) är standardspråket för webbsidor. Med hjälp
             av HTML kan du skapa dina egna hemsidor på internet. HTML är lätt att förstå och
             lära sig och med hjälp av olika taggar kommer du snabbt lära dig hur man skapar
@@ -40,44 +40,45 @@
             lokala menyn till vänster för att lära dig om vad man använder det till.
         </p>
         <table> <!--skapar en tabell-->
-            <caption>Vanliga HTML taggar</caption> <!--En rubrik till tabellen-->
+            <caption tabindex="0">Vanliga HTML taggar</caption> <!--En rubrik till tabellen-->
             <thead> <!--Header i tabellen-->
                 <tr> <!--I tr är det en rad i tabellen-->
-                    <th scope="col">Tagg:</th> <!--En ruta där det står vad td ska innehålla-->
-                    <th scope="col">Vad den gör:</th>
-                    <th scope="col">Exempel:</th>
+                    <th scope="col" tabindex="0">Tagg:</th> <!--En ruta där det står vad td ska innehålla-->
+                    <th scope="col" tabindex="0">Vad den gör:</th>
+                    <th scope="col" tabindex="0">Exempel:</th>
                 </tr>
             </thead>
             <tbody> <!--Main i tabellen-->
                 <tr>
-                    <td>h1</td> <!--En ruta i tabellen med innehåll/data om det som står i th-->
-                    <td>&lt;h1&gt; gör så man kan skriva huvudtitlen på sin sida och det kan bara finnas en &lt;h1&gt;
+                    <td tabindex="0">h1</td> <!--En ruta i tabellen med innehåll/data om det som står i th-->
+                    <td tabindex="0">&lt;h1&gt; gör så man kan skriva huvudtitlen på sin sida och det kan bara finnas en &lt;h1&gt;
                         på
                         varje sida. Sedan finns det &lt;h2&gt;, &lt;h3&gt; osv som också är titlar men dessa är mindre
                         viktiga titlar som kan användas flera gånger. desto högre nummer desto mindre viktig titel.
                     </td>
-                    <td>&lt;h1&gt;Här står huvudtitlen på din sida&lt;/h1&gt; &lt;h2&gt;Här står titlen på något mindre
+                    <td tabindex="0">&lt;h1&gt;Här står huvudtitlen på din sida&lt;/h1&gt; &lt;h2&gt;Här står titlen på något mindre
                         viktigt&lt;/h2&gt;</td>
                 </tr>
                 <tr>
-                    <td>p</td>
-                    <td>&lt;p&gt; gör så man kan skriva vanlig text</td>
-                    <td>&lt;p&gt; här står vanlig text som du t.ex kan ha under en h2 tagg&lt;/p&gt;</td>
+                    <td tabindex="0">p</td>
+                    <td tabindex="0">&lt;p&gt; gör så man kan skriva vanlig text</td>
+                    <td tabindex="0">&lt;p&gt; här står vanlig text som du t.ex kan ha under en h2 tagg&lt;/p&gt;</td>
                 </tr>
                 <tr>
-                    <td>img</td>
-                    <td>&lt;img&gt; används för att göra bilder</td>
-                    <td>&lt;img src="bilder/hund.png"&gt;&lt;/img&gt;</td>
+                    <td tabindex="0">img</td>
+                    <td tabindex="0">&lt;img&gt; används för att göra bilder</td>
+                    <td tabindex="0">&lt;img src="bilder/hund.png"&gt;&lt;/img&gt;</td>
                 </tr>
             </tbody>
             <tfoot> <!--footer i tabellen-->
                 <tr>
-                    <td>a</td>
-                    <td>&lt;a&gt; används för att skapa en länk</td>
-                    <td>&lt;a href="https://www.facebook.com"&gt;&lt;/a&gt;</td>
+                    <td tabindex="0">a</td>
+                    <td tabindex="0">&lt;a&gt; används för att skapa en länk</td>
+                    <td tabindex="0">&lt;a href="https://www.facebook.com"&gt;&lt;/a&gt;</td>
                 </tr>
             </tfoot>
         </table>
+        <h2>Boll skapad med HTML:</h2>
         <svg width="100" height="100"> <!--gör en form utan att behöva använda sig av bilder, man gör formen själv, i detta fallet en cirkel-->
             <circle cx="50" cy="50" r="40" stroke="rgb(23, 23, 23)" stroke-width="4" fill="rgb(228, 77, 38)" />
         </svg>
@@ -89,8 +90,8 @@
             <a href="https://twitter.com/Guswe420"><img src="bilder/twitter.png" alt="twitterlänk"></a>
             <a href="https://www.tiktok.com/@frankdamonkey420"><img src="bilder/tiktok.png" alt="tiktoklänk"></a>
         </div>
-        <h3>gujo04002@utb.vaxjo.se</h3> <!--h3 är den tredje mest viktiga rubriken efter h2, till skillnad från h1 kan det finnas flera h3 på en sida-->
-        <p>Snälla följ mig Tim.//frankdamonkey420 </p>
+        <h2 tabindex="0">gujo04002@utb.vaxjo.se</h2> 
+        <p tabindex="0">Snälla följ mig Tim.//frankdamonkey420 </p>
     </footer>
 </body>
 

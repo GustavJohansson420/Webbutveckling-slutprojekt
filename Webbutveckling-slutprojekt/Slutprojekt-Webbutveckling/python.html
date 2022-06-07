@@ -13,7 +13,7 @@
 <body> <!--Här skriver man det som kommer synas på sidan-->
     <header> <!--Header är det som är högst upp på sidan som t.ex h1 och global navigerings meny-->
         <a href="index.html"><img class="Logo" src="bilder/Logo.png" alt="Logo"></a> <!--En logo bild med en länk till index-sidan om man trycker på bilden-->
-        <h1>Gustavs IT tips</h1> <!--Huvudrubriken på sidan, kan bara finnas en h1 på varje sida-->
+        <h1 tabindex="0">Gustavs IT tips</h1> <!--Huvudrubriken på sidan, kan bara finnas en h1 på varje sida-->
         <nav> <!--I nav skriver vi en navigerings meny i detta fallet en global meny-->
             <ul class="container"> <!--ul står för "unordered list" och är en lista där itemsen inte är numrerade-->
                 <li><a href="webbutveckling.html">Webbutveckling</a></li> <!--li står för list item och här skriver vi ett item i listan, i detta fallet en länk till en annan sida-->
@@ -24,12 +24,12 @@
     </header>
     <main> <!--I main skriver man "main" innehållet på sidan, här skriver man det mesta innehållet om sidan-->
         <div> <!--En div sätter man andra olika tagger i en container så man sedan kan styla hela diven med css-->
-            <h2>Python</h2> <!--h2 är den näst mest viktiga rubriken efter h1, till skillnad från h1 kan det finnas flera h2 på en sida-->
-            <img src="bilder/Python.Jpeg" alt="PythonBild"> <!--En bild på Pythons logga-->
+            <h2 tabindex="0">Python</h2> <!--h2 är den näst mest viktiga rubriken efter h1, till skillnad från h1 kan det finnas flera h2 på en sida-->
+            <img src="bilder/Python.Jpeg" alt="PythonBild" tabindex="0"> <!--En bild på Pythons logga-->
         </div>
         <figure> <!--Här i har sätter man t.ex en bild och så kan man använda sig av figcaption för att förklara bilden-->
-            <img src="bilder/helloworld.jpeg" alt="hello world"> <!--Bild på ett hello world programm-->
-            <figcaption>Ett "Hello World" programm är oftast sättet programmeringsspråk illustrerar sin grundläggande syntax</figcaption>
+            <img src="bilder/helloworld.jpeg" alt="hello world" tabindex="0"> <!--Bild på ett hello world programm-->
+            <figcaption tabindex="0">Ett "Hello World" programm är oftast sättet programmeringsspråk illustrerar sin grundläggande syntax</figcaption>
         </figure>
         <nav> <!--En lokal meny-->
             <ul>
@@ -39,8 +39,8 @@
             </ul>
         </nav>
         <section> <!--En sektion av sidan-->
-            <h2>Info:</h2>
-            <p> <!--Här skriver vi vanlig text, i detta fallet info om Python-->
+            <h2 tabindex="0">Info:</h2>
+            <p tabindex="0"> <!--Här skriver vi vanlig text, i detta fallet info om Python-->
                 Python är det näst mest populära programmeringsspråket som vi kan se i listan om de populäraste 
                 programmeringsspråken på sidan om programmering som du kan läsa om du klickar på länken i den lokala 
                 navigeringsmenyn upper till höger. Python är så här populärt för att det är väldigt lätt att förstå och då lätt att lära sig för 
@@ -50,16 +50,16 @@
             </p>
         </section>
         <section>
-            <h2>Populära spel gjorda i python:</h2>
+            <h2 tabindex="0">Populära spel gjorda i python:</h2>
             <dl> <!--dl står för description list-->
-                <dt>Flappy Bird:</dt> <!--Ett item i listan-->
-                <dd>Fågel som ska försöka flyga genom rör utan att nudda dem.</dd> <!--förklarar ett item i listan-->
+                <dt tabindex="0">Flappy Bird:</dt> <!--Ett item i listan-->
+                <dd tabindex="0">Fågel som ska försöka flyga genom rör utan att nudda dem.</dd> <!--förklarar ett item i listan-->
 
-                <dt>The Sims 4:</dt>
-                <dd>Spelaren bestämmer vad "simmarna" i simulationen ska göra.</dd>
+                <dt tabindex="0">The Sims 4:</dt>
+                <dd tabindex="0">Spelaren bestämmer vad "simmarna" i simulationen ska göra.</dd>
 
-                <dt>World of Tanks:</dt>
-                <dd>Multiplayer-spel där spelarna krigar mot varandra i pansarvagnar.</dd>
+                <dt tabindex="0">World of Tanks:</dt>
+                <dd tabindex="0">Multiplayer-spel där spelarna krigar mot varandra i pansarvagnar.</dd>
             </dl>
         </section>
     </main>
@@ -70,8 +70,8 @@
             <a href="https://twitter.com/Guswe420"><img src="bilder/twitter.png" alt="twitterlänk"></a>
             <a href="https://www.tiktok.com/@frankdamonkey420"><img src="bilder/tiktok.png" alt="tiktoklänk"></a>
         </div>
-        <h3>gujo04002@utb.vaxjo.se</h3> <!--h3 är den tredje mest viktiga rubriken efter h2, till skillnad från h1 kan det finnas flera h3 på en sida-->
-        <p>Snälla följ mig Tim.//frankdamonkey420 </p>
+        <h2 tabindex="0">gujo04002@utb.vaxjo.se</h2> 
+        <p tabindex="0">Snälla följ mig Tim.//frankdamonkey420 </p>
     </footer>
 </body>
 </html>

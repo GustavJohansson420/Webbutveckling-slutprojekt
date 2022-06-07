@@ -11,141 +11,169 @@
 </head>
 
 <body> <!--Här skriver man det som kommer synas på sidan-->
-    <form action="index.html" method="GET"> <!--Gör ett formulär-->
-        <section> <!--En sektion av sidan-->
-            <fieldset> <!--Grupperar relaterande element i ett formulär, i detta fallet personuppgifter-->
-                <legend> <!--Rubriken till fieldset-->
-                    Personuppgifter:
-                </legend>
-                <div> <!--En div sätter man andra olika tagger i en container så man sedan kan styla hela diven med css-->
-                    <label for="fn">Förnamn: </label> <!--definerar en label till olika element som t.ex input-->
+    <main>
+        <h1>Gustavs IT tips</h1>
+        <form action="index.html" method="GET"> <!--Gör ett formulär-->
+            <section> <!--En sektion av sidan-->
+                <fieldset> <!--Grupperar relaterande element i ett formulär, i detta fallet personuppgifter-->
+                    <legend tabindex="0"> <!--Rubriken till fieldset-->
+                        Personuppgifter:
+                    </legend>
+                    <div> <!--En div sätter man andra olika tagger i en container så man sedan kan styla hela diven med css-->
+                        <label for="fn" tabindex="0">Förnamn: </label> <!--definerar en label till olika element som t.ex input-->
+                    </div>
+                    <div>
+                        <input type="text" id="fn" name="fn" required tabindex="0" placeholder="Gustav Johansson"> <!--Här kan användaren skriva in data av typen "text"-->
+                    </div>
+                    <div>
+                        <label for="en" tabindex="0">Efternamn: </label>
+                    </div>
+                    <div>
+                        <input type="text" id="en" name="en" required tabindex="0">
+                    </div>
+                    <div>
+                        <label for="lö" tabindex="0">Lösenord: </label>
+                    </div>
+                    <div>
+                        <input type="password" id="lö" name="lö" required tabindex="0"> <!--Här kan användaren skriva in data av typen "password"-->
+                    </div>
+                    <div>
+                        <label for="em" tabindex="0">Email: </label>
+                    </div>
+                    <div>
+                        <input type="email" id="em" name="em" required tabindex="0"> <!--Här kan användaren skriva in data av typen "email"-->
+                    </div>
+                    <div>
+                        <label for="te" tabindex="0">Telefon: </label>
+                    </div>
+                    <div>
+                        <input type="tel" id="te" name="te" required tabindex="0"> <!--Här kan användaren skriva in data av typen "tel"-->
+                    </div>
+                </fieldset>
+                <h2 tabindex="0"> <!--h2 är den näst mest viktiga rubriken efter h1, till skillnad från h1 kan det finnas flera h2 på en sida-->
+                    Hur bra tycker du att sidan fungerar?
+                </h2>
+                <div>
+                    <input type="radio" id="mb" name="hb"> <!--En input knapp av typen "radio"-->
+                    <label for="mb" tabindex="0">Mycket bra</label>
                 </div>
                 <div>
-                    <input type="text" id="fn" name="fn" required> <!--Här kan användaren skriva in data av typen "text"-->
+                    <input type="radio" id="b" name="hb">
+                    <label for="b" tabindex="0">Bra</label>
                 </div>
                 <div>
-                    <label for="en">Efternamn: </label>
+                    <input type="radio" id="sd" name="hb" checked>
+                    <label for="sd" tabindex="0">Sådär</label>
                 </div>
                 <div>
-                    <input type="text" id="en" name="en" required>
+                    <input type="radio" id="d" name="hb">
+                    <label for="d" tabindex="0">Dåligt</label>
                 </div>
                 <div>
-                    <label for="lö">Lösenord: </label>
+                    <input type="radio" id="md" name="hb">
+                    <label for="md" tabindex="0">Mycket dåligt</label>
+                </div>
+                <h2 tabindex="0">
+                    Vilken sida är din favorit?
+                </h2>
+                <div>
+                    <label for="fav" tabindex="0">Välj sida:</label>
+                    <select name="fav" id="fav"> <!--Skapar en dropdown meny med olika "options"-->
+                        <option value="index">Start-sidan/Index-sidan</option> <!--Ett alternativ i select-->
+                        <option value="form">Formulär-sidan/denna sidan</option> 
+                        <option value="webbutveckling">Webbutveckling-sidan</option> 
+                        <option value="HTML">HTML-sidan</option> 
+                        <option value="CSS">CSS-sidan</option> 
+                        <option value="Programmering">Programmering-sidan</option> 
+                        <option value="Python">Python-sidan</option> 
+                        <option value="C#">C#-sidan</option> 
+                        <option value="Tips">Tips-sidan</option>  
+                    </select>
+                </div>
+                <h2 tabindex="0">
+                    Vilken sida ser best ut?
+                </h2>
+                <div>
+                    <label for="sbu" tabindex="0">Välj sida:</label>
+                    <input list="sidor" name="sbu" id="sbu"> <!--Gör så man kan skriva in en sida men man får också förslag beroende på vad man skriver-->
+                    <datalist id="sidor">
+                        <option value="index">
+                        <option value="form">
+                        <option value="webbutveckling">
+                        <option value="HTML">
+                        <option value="CSS">
+                        <option value="Programmering">
+                        <option value="Python">
+                        <option value="C#">
+                        <option value="Tips">
+                    </datalist>
+                </div>
+                <h2 tabindex="0">
+                    På en skala 1-10 hur bra är sidan?
+                </h2>
+                <div>
+                    <label for="1-10" tabindex="0">Välj nummer(1-10):</label>
+                    <input type="number" id="1-10" name="1-10" step="1" min="1" max="10"> <!--Gör så att man bara kan skriva in nummer mellan 1-10 och man kan bläddra 1 nummer i taget-->
+                </div>
+            </section>
+            <section>
+                <h2 tabindex="0">
+                    Vilken/vilka sidor är det fel på?
+                </h2>
+                <div>
+                    <input type="checkbox" id="index" name="index"> <!--En input knapp av typen "checkbox"-->
+                    <label for="index" tabindex="0">Start-sidan/Index-sidan</label>
                 </div>
                 <div>
-                    <input type="password" id="lö" name="lö" required> <!--Här kan användaren skriva in data av typen "password"-->
+                    <input type="checkbox" id="form" name="form">
+                    <label for="form" tabindex="0">Formulär-sidan/denna sidan</label>
                 </div>
                 <div>
-                    <label for="em">Email: </label>
+                    <input type="checkbox" id="webbutveckling" name="webbutveckling">
+                    <label for="webbutveckling" tabindex="0">Webbutveckling-sidan</label>
                 </div>
                 <div>
-                    <input type="email" id="em" name="em" required> <!--Här kan användaren skriva in data av typen "email"-->
+                    <input type="checkbox" id="HTML" name="HTML">
+                    <label for="HTML" tabindex="0">HTML-sidan</label>
                 </div>
                 <div>
-                    <label for="te">Telefon: </label>
+                    <input type="checkbox" id="CSS" name="CSS">
+                    <label for="CSS" tabindex="0">CSS-sidan</label>
                 </div>
                 <div>
-                    <input type="tel" id="te" name="te" required> <!--Här kan användaren skriva in data av typen "tel"-->
+                    <input type="checkbox" id="Programmering" name="Programmering">
+                    <label for="Programmering" tabindex="0">Programmering-sidan</label>
                 </div>
-            </fieldset>
-            <h2> <!--h2 är den näst mest viktiga rubriken efter h1, till skillnad från h1 kan det finnas flera h2 på en sida-->
-                Hur bra tycker du att sidan fungerar?
-            </h2>
-            <div>
-                <input type="radio" id="mb" name="hb"> <!--En input knapp av typen "radio"-->
-                <label for="mb">Mycket bra</label>
-            </div>
-            <div>
-                <input type="radio" id="b" name="hb">
-                <label for="b">Bra</label>
-            </div>
-            <div>
-                <input type="radio" id="sd" name="hb" checked>
-                <label for="sd">Sådär</label>
-            </div>
-            <div>
-                <input type="radio" id="d" name="hb">
-                <label for="d">Dåligt</label>
-            </div>
-            <div>
-                <input type="radio" id="md" name="hb">
-                <label for="md">Mycket dåligt</label>
-            </div>
-            <h2>
-                Vilken sida är din favorit?
-            </h2>
-            <div>
-                <label for="fav">Välj sida:</label>
-                <select name="fav" id="fav"> <!--Skapar en dropdown meny med olika "options"-->
-                    <option value="index" selected>Start-sidan/Index-sidan</option> <!--Ett alternativ i select-->
-                    <option value="form">Formulär-sidan/denna sidan</option> 
-                    <option value="webbutveckling">Webbutveckling-sidan</option> 
-                    <option value="HTML">HTML-sidan</option> 
-                    <option value="CSS">CSS-sidan</option> 
-                    <option value="Programmering">Programmering-sidan</option> 
-                    <option value="Python">Python-sidan</option> 
-                    <option value="C#">C#-sidan</option> 
-                    <option value="Tips">Tips-sidan</option>  
-                </select>
-            </div>
-        </section>
-        <section>
-            <h2>
-                Vilken/vilka sidor är det fel på?
-            </h2>
-            <div>
-                <input type="checkbox" id="index" name="index"> <!--En input knapp av typen "checkbox"-->
-                <label for="index">Start-sidan/Index-sidan</label>
-            </div>
-            <div>
-                <input type="checkbox" id="form" name="form">
-                <label for="form">Formulär-sidan/denna sidan</label>
-            </div>
-            <div>
-                <input type="checkbox" id="webbutveckling" name="webbutveckling">
-                <label for="webbutveckling">Webbutveckling-sidan</label>
-            </div>
-            <div>
-                <input type="checkbox" id="HTML" name="HTML">
-                <label for="HTML">HTML-sidan</label>
-            </div>
-            <div>
-                <input type="checkbox" id="CSS" name="CSS">
-                <label for="CSS">CSS-sidan</label>
-            </div>
-            <div>
-                <input type="checkbox" id="Programmering" name="Programmering">
-                <label for="Programmering">Programmering-sidan</label>
-            </div>
-            <div>
-                <input type="checkbox" id="Python" name="Python">
-                <label for="Python">Python-sidan</label>
-            </div>
-            <div>
-                <input type="checkbox" id="C#" name="C#">
-                <label for="C#">C#-sidan</label>
-            </div>
-            <div>
-                <input type="checkbox" id="Tips" name="Tips">
-                <label for="Tips">Tips-sidan</label>
-            </div>
-            <div>
-                <label class="textarea" for="ff">Skriv förslag på förändringar/frågor: </label>
-            </div>
-            <div>
-                <textarea rows="20" cols="45" id="ff" name="ff"></textarea> <!--En stor yta där användaren kan skriva in data-->
-            </div>
+                <div>
+                    <input type="checkbox" id="Python" name="Python">
+                    <label for="Python" tabindex="0">Python-sidan</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="C#" name="C#">
+                    <label for="C#" tabindex="0">C#-sidan</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Tips" name="Tips">
+                    <label for="Tips" tabindex="0">Tips-sidan</label>
+                </div>
+                <div>
+                    <label class="textarea" for="ff" tabindex="0">Skriv förslag på förändringar/frågor: </label>
+                </div>
+                <div>
+                    <textarea rows="20" cols="45" id="ff" name="ff" ></textarea> <!--En stor yta där användaren kan skriva in data-->
+                </div>
 
-            <input type="submit" value="submit"> <!--En knapp där användaren skickar in det han/hon har skrivit i formuläret-->
-        </section>
-        <section>
-            <p class="låt"> <!--Här skriver vi vanlig text, i detta fallet info om låten-->
-                bakgrundsmusik om du vill: <br> <!--br gör en ny rad--> 
-                4th Dimension - Kanye West & Kid Cudi
-            </p>
-            <audio src="4th_Dimension.mp3" loop controls>4th Dimension - Kanye West & Kid Cudi - mp3-fil</audio> <!--Ljudfil med justerings knappar-->
-        </section>
-    </form>
+                <input type="submit" value="submit"> <!--En knapp där användaren skickar in det han/hon har skrivit i formuläret-->
+            </section>
+            <section>
+                <p class="låt" tabindex="0"> <!--Här skriver vi vanlig text, i detta fallet info om låten-->
+                    bakgrundsmusik om du vill: <br> <!--br gör en ny rad--> 
+                    4th Dimension - Kanye West & Kid Cudi
+                </p>
+                <audio src="4th_Dimension.mp3" loop controls>4th Dimension - Kanye West & Kid Cudi - mp3-fil</audio> <!--Ljudfil med justerings knappar-->
+            </section>
+        </form>
+    </main>
 </body>
 
 </html>

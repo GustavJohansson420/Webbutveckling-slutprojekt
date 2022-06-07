@@ -100,7 +100,7 @@ footer img{ /*Bilden i footer blir 80px hög*/
     height: 80px; 
 }
 
-footer h3, footer p{ /*Rubriken och texten hamnar i mitten och är vit*/
+footer h2, footer p{ /*Rubriken och texten hamnar i mitten och är vit*/
     text-align: center;
     color: white;
 }

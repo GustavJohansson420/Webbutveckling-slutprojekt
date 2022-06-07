@@ -1,3 +1,7 @@
+h1 { /*Gör så att huvudrubriken inte syns*/
+    display: none;
+}
+
 form { /*Gör så att formuläret är en grid med 5 kollumner som är lika stora*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -48,4 +52,12 @@ legend { /*Gör så att legend har en viss bakgrundsfärg, en viss färg, 1em ut
 input:checked { /*När man har checkat i en input så blir markören 15px bred och hög*/
     width: 15px;
     height: 15px;
+}
+
+input:required {
+    background-color: white;
+}
+
+input:optional {
+    background-color: white;
 }

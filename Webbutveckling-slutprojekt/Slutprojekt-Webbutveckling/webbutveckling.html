@@ -13,7 +13,7 @@
 <body> <!--Här skriver man det som kommer synas på sidan-->
     <header> <!--Header är det som är högst upp på sidan som t.ex h1 och global navigerings meny-->
         <a href="index.html"><img class="Logo" src="bilder/Logo.png" alt="Logo"></a> <!--En logo bild med en länk till index-sidan om man trycker på bilden-->
-        <h1>Gustavs IT tips</h1> <!--Huvudrubriken på sidan, kan bara finnas en h1 på varje sida-->
+        <h1 tabindex="0">Gustavs IT tips</h1> <!--Huvudrubriken på sidan, kan bara finnas en h1 på varje sida-->
         <nav> <!--I nav skriver vi en navigerings meny i detta fallet en global meny-->
             <ul class="container"> <!--ul står för "unordered list" och är en lista där itemsen inte är numrerade-->
                 <li><a id="nuvarandesida" href="webbutveckling.html">Webbutveckling</a></li> <!--li står för list item och här skriver vi ett item i listan, i detta fallet en länk till en annan sida-->
@@ -31,10 +31,10 @@
             </ul>
         </nav>
         <div>
-            <h2>Webbutveckling</h2> <!--h2 är den näst mest viktiga rubriken efter h1, till skillnad från h1 kan det finnas flera h2 på en sida-->
-            <img src="bilder/WebbutvecklingBild.png" alt="WebbutvecklingBild"> <!--Bild på en datorskärm-->
+            <h2 tabindex="0">Webbutveckling</h2> <!--h2 är den näst mest viktiga rubriken efter h1, till skillnad från h1 kan det finnas flera h2 på en sida-->
+            <img src="bilder/WebbutvecklingBild.png" alt="WebbutvecklingBild" tabindex="0"> <!--Bild på en datorskärm-->
         </div> <!--En div sätter man andra olika tagger i en container så man sedan kan styla hela diven med css-->
-        <p> <!--Här skriver vi vanlig text, i detta fallet info om HTML-->
+        <p tabindex="0"> <!--Här skriver vi vanlig text, i detta fallet info om HTML-->
             Har du någon gång varit inne på en hemsida och kanske undrat hur den
             är uppbyggd. Om du har det så kanske du kommer vara intreserad i
             webbutveckling. Något som alla som håller på med webbutveckling
@@ -43,14 +43,15 @@
             på den lokala navigeringsmenyn till vänster för att lära dig mer
             om HTML och CSS eller kolla på videon nedan för at lära dig mer om webbutveckling.
         </p>
-        <h2>Klicka nedan för att kolla på någon video</h2>
+        <h2 tabindex="0">Klicka nedan för att kolla på någon video</h2>
         <div class="target">
             <a href="#video1">VIDEO 1</a>
             <a href="#video2">VIDEO 2</a>
             <div id="video1">
+                <!--iframe gör så att vi får en video, i detta fallet från youtube-->
                 <iframe src="https://www.youtube.com/embed/5YDVJaItmaY"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen> <!--iframe gör så att vi får en video, i detta fallet från youtube-->
+                allowfullscreen> 
                 </iframe> 
             </div>
             <div id="video2">
@@ -71,8 +72,8 @@
             <a href="https://twitter.com/Guswe420"><img src="bilder/twitter.png" alt="twitterlänk"></a>
             <a href="https://www.tiktok.com/@frankdamonkey420"><img src="bilder/tiktok.png" alt="tiktoklänk"></a>
         </div>
-        <h3>gujo04002@utb.vaxjo.se</h3> <!--h3 är den tredje mest viktiga rubriken efter h2, till skillnad från h1 kan det finnas flera h3 på en sida-->
-        <p>Snälla följ mig Tim.//frankdamonkey420 </p>
+        <h2 tabindex="0">gujo04002@utb.vaxjo.se</h2> 
+        <p tabindex="0">Snälla följ mig Tim.//frankdamonkey420 </p>
     </footer>
 </body>
 
