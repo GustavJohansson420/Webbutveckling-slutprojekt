@@ -54,10 +54,10 @@ input:checked { /*När man har checkat i en input så blir markören 15px bred o
     height: 15px;
 }
 
-input:required {
+input:required { /*Gör så att bakgrundsfärgen är vit när en input är requiered*/
     background-color: white;
 }
 
-input:optional {
+input:optional { /*Gör så att bakgrundsfärgen är vit när en input är optional*/
     background-color: white;
 }

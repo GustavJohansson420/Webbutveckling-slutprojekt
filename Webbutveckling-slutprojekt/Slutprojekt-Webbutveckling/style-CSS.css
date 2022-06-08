@@ -160,15 +160,24 @@ tr:nth-child(even), thead>tr, tfoot>tr  { /*Gör så att tabellen får zebra-str
     background-color: rgb(41, 101, 241);
 }
 
-.boll {
+main h2 { /*Gör så att h2 i main har 50px utrymme ovanför, hamnar i mitten, kan ta upp utrymme kollumn 1-3*/
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.boll { /*Gör så att bollen kan ta upp utrymme kollumn 1-3, gör så den hamnar i mitten, har en färg, 70px hög och bred, runda hörn(annars är det inte en boll), en svart outline som är 4px bred*/
     grid-column-start: 1;
     grid-column-end: 4;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(38, 77, 228);
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
+    border: solid black 4px;
 }
 
 footer { /*Footern får en viss bakgrundsfärg, får 10px utrymme innanför bordern, 100px utrymme uppifrån*/
@@ -185,6 +194,10 @@ footer div{ /*Diven i footern blir 335px bred och hamnar i mitten*/
 
 footer img{ /*Bilden i footer blir 80px hög*/
     height: 80px; 
+}
+
+footer h2 { /*Gör så att rubriken i footer är 1.5rem stor*/
+    font-size: 1.5rem;
 }
 
 footer h2, footer p{ /*Rubriken och texten hamnar i mitten och är vit*/

@@ -68,11 +68,11 @@ main { /*Gör så att mainen är en grid med 4 kolumner som är lika stora*/
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-main > h2 { /*Rubriken i main är i mitten, kan ta upp utrymmet kollumn 1, har storleken 2em*/
+main > h2 { /*Rubriken i main är i mitten, kan ta upp utrymmet kollumn 1, har storleken 3vmin*/
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 2;
-    font-size: 2em;
+    font-size: 3vmin;
 }
 
 main div { /*Diven i main kan ta upp utrymmet kollumn 2-4, har 30px utrymme ovanför, hamnar i mitten, runda hörn, har en bild som bakgrund, har en skugga med en viss färg*/
@@ -146,6 +146,10 @@ footer div{ /*Diven i footern blir 335px bred och hamnar i mitten*/
 
 footer img{ /*Bilden i footer blir 80px hög*/
     height: 80px; 
+}
+
+footer h2 { /*Gör så att rubriken i footer är 1.5rem stor*/
+    font-size: 1.5rem;
 }
 
 footer h2, footer p{ /*Rubriken och texten hamnar i mitten och är vit*/

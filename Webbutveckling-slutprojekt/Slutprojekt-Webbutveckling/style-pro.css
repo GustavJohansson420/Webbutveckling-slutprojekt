@@ -180,6 +180,10 @@ footer img{ /*Bilden i footer blir 80px hög*/
     height: 80px; 
 }
 
+footer h2 { /*Gör så att rubriken i footer är 1.5rem stor*/
+    font-size: 1.5rem;
+}
+
 footer h2, footer p{ /*Rubriken och texten hamnar i mitten och är vit*/
     text-align: center;
     color: white;
